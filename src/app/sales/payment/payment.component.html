@@ -1,0 +1,18 @@
+<div class="container ms-320px">
+  <div class="card col-12">
+    <div class="card-body ">
+      <h2 class="card-title col-12">PAYMENTS</h2>
+      <form [formGroup]="done" (ngSubmit)="onSubmit()">
+        <label class="one">AMOUNT DUE</label><span class="sp1">:</span><span class="sp2">7500rs</span><br>
+        <div class="row">
+
+          <label class="two">AMOUNT RECIEVED</label><span class="sp3">:</span>
+          <input type="text" class="form-control col-xs-2" formControlName="Rupees" placeholder="inRupees">
+        </div>
+
+
+        <button type="submit" class="btn btn-dark">DONE</button>
+      </form>
+    </div>
+  </div>
+</div>

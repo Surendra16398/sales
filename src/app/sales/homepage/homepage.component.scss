@@ -1,0 +1,44 @@
+.container {
+  padding-left: 148px;
+  margin-top: 0px;
+}
+
+.div1 {
+  height: 173px;
+  width: 398px;
+  background-color: rgba(250, 248, 243, 0.842);
+  border-radius: 55px;
+  border: 1px dashed rgba(0, 0, 0, 0.479);
+  margin: 29px;
+  opacity: 1;
+}
+
+
+
+.text-p {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 46px;
+}
+
+.bell {
+  font-size: 43px;
+  text-align: end;
+  margin-right: 27%;
+  margin-top: 11%;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .one {
+    margin-right: 64px !important;
+  }
+
+}
+
+@media (min-width: 663px) and (max-width: 767px) {
+  .container {
+    margin: 0px !important;
+    width: 0px !important;
+  }
+}

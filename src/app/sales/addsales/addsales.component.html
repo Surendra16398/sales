@@ -1,0 +1,133 @@
+
+
+ 
+<div class="container">
+    <div class="row">
+          <div class="col-md-7 mt-5">
+              <h3 style="font-family: poppins;font-weight:SemiBold; font-size:38.8px;color:#363636;width: 146px;height: 53px;text-align: left;">Signup</h3>
+              <form [formGroup]="Dealer" (ngSubmit)="dealerSubmit()">
+                  <div class="form-row">
+                      <div class="col-md-6 mb-3">
+                          <div class="input-group mb-2">
+                              <div class="input-group-prepend">
+                                  <div class="input-group-text">FIRST NAME</div>
+                              </div>
+                              <input type="text" class="form-control" formControlName="firstName" id="inlineFormInputGroup"
+                                  placeholder="Enter First Name">
+                          </div>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                          <div class="input-group mb-2">
+                              <div class="input-group-prepend">
+                                  <div class="input-group-text">LAST NAME</div>
+                              </div>
+                              <input type="text" class="form-control" formControlName="lastName" id="inlineFormInputGroup"
+                                  placeholder="Enter Last Name">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="form-row">
+                      <div class="col-md-6 mb-3">
+                          <div class="input-group mb-2">
+                              <div class="input-group-prepend">
+                                  <div class="input-group-text">PHONENO</div>
+                              </div>
+                              <input type="text" class="form-control" formControlName="phone" id="inlineFormInputGroup" placeholder="Enter Phone">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="form-row">
+                      <div class="col-md-12 mb-3">
+                          <div class="input-group mb-2">
+                              <div class="input-group-prepend">
+                                  <div class="input-group-text">ADDRESS</div>
+                              </div>
+                              <input type="text" class="form-control" formControlName="address" id="inlineFormInputGroup"
+                                  placeholder="Enter Address">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="form-row">
+                      <div class="col-md-6 mb-3">
+                          <div class="input-group mb-2">
+                              <div class="input-group-prepend">
+                                  <div class="input-group-text">AADHAR</div>
+                              </div>
+                              <input type="text" class="form-control" formControlName="aadhar" id="inlineFormInputGroup"
+                                  placeholder="Enter Aadhar">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="form-row">
+                      <div class="col-md-6 mb-3">
+                          <div class="input-group mb-2">
+                              <div class="input-group-prepend">
+                                  <div class="input-group-text">PAN</div>
+                              </div>
+                              <input type="text" class="form-control" formControlName="pan" id="inlineFormInputGroup" placeholder="Enter PAN">
+                          </div>
+                      </div>
+                  </div>
+  
+                  <div class="form-row">
+                      <div class="col-md-6 mb-3">
+                          <div class="input-group mb-2">
+                              <div class="input-group-prepend">
+                                  <div class="input-group-text">GST</div>
+                              </div>
+                              <input type="text" class="form-control" formControlName="dob" id="inlineFormInputGroup" placeholder="Enter GST number">
+                          </div>
+                      </div>
+                  </div>
+                  
+  
+                  <div class="form-row">
+                      <div class="col-md-6 mb-3">
+                          <div class="input-group mb-2">
+                              <div class="input-group-prepend">
+                                  <div class="input-group-text">DATEOFBIRTH</div>
+                              </div>
+                              <input type="text" class="form-control" formControlName="dob" id="inlineFormInputGroup" placeholder="Enter PAN">
+                          </div>
+                      </div>
+                  </div>
+                   
+                  
+                  
+          
+          
+  
+  
+  
+  
+  
+  
+                  
+                  <div class="form-row">
+                      <div class="col-md-6 mb-3">
+                          <div class="input-group mb-2">
+                              <div class="input-group-prepend">
+                                  <div class="input-group-text">PASSWORD</div>
+                              </div>
+                              <input type="password" class="form-control" formControlName="password" id="inlineFormInputGroup"
+                                  placeholder="Enter Password">
+                          </div>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                          <div class="input-group mb-2">
+                              <div class="input-group-prepend">
+                                  <div class="input-group-text">CONFIRM <br>PASSWORD</div>
+                              </div>
+                              <input type="password" class="form-control" formControlName="confirmPwd" id="inlineFormInputGroup"
+                                  placeholder="Enter cofirm password">
+                          </div>
+                      </div>
+                  </div>
+                  <button class="btn btn-primary" type="submit" style="color:#ffffff;background:#264057;width: 148px;height: 40px;font-family: arial;font-weight:bold;">signup</button>
+                  <a href="" class="btn btn-default btn-rounded my-4 " style="font-family:poppins;font-weight:medium;color:#264057;font-size:14px;"
+                  routerLink="/signin">Already have account?Login Here</a>
+                  <!-- <a href="" class="btn btn-default btn-rounded my-4"
+                  routerLink="">Register as dealer</a> -->
+              </form>
+          </div>
+   

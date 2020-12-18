@@ -1,0 +1,76 @@
+<div class="container col-md-6">
+  <table class="table table-bordered table-sm" style="text-align: center;height: 50%;">
+    <thead class="table table-dark">
+      <tr>
+        <th *ngFor="let item of headers" [attr.rowspan]="item.length">{{item}}</th>
+      </tr>
+    </thead>
+
+    <tr *ngFor="let item of rows">
+      <td>
+        {{item.Product}}
+      </td>
+      <td>
+        <table class="child-table">
+          <tr *ngFor="let subitem of item.type">
+            <td> {{subitem.name}} </td>
+            <td> {{subitem.closingStack}} </td>
+
+          </tr>
+        </table>
+
+        <div class="container" style="height: 4px;">
+          <div class="row">
+      <td class="col-sm pt-1" style="border: none;">
+        One of three columns
+        <hr>
+      </td>
+</div>
+</div>
+
+<!-- Force next columns to break to new line at md breakpoint and up -->
+
+
+
+
+
+<!-- <div class="container" style="height: 4px;">
+          <div class="row">
+            <td class="col-sm" style="border: none;">
+              One of three columns  
+            </td>
+          </div>
+        </div> -->
+
+<!-- <div class="container" style="height: 4px;">
+          <div class="row">
+            <td class="col-sm" style="border: none;">
+              One of three columns
+            </td>
+          </div>
+        </div>         -->
+</td>
+<td>
+  <tr>240</tr>
+  <tr>120</tr>
+  <tr>40</tr>
+</td>
+</tr>
+</table>
+</div>
+
+<!-- 
+<table>
+  <ng-container *ngFor="let data of dataList">
+    <tr>
+      <td [attr.rowspan]="data.numbers.length">{{data.pname}}</td>
+      <td>{{data.numbers[0]}}</td>
+    </tr>
+    <ng-container *ngFor="let number of data.numbers; let i= index;">
+      <tr *ngIf="i!=0">
+        <td>{{number}}</td>
+      </tr>
+    </ng-container>
+
+  </ng-container>
+</table> -->
